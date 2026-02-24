@@ -30,7 +30,7 @@ project14/
 
 ## How to Run
 
-Live link:
+Live link: https://oliwier-dev.github.io/my-pomodoro-timer/
 
 ## Usage
 
