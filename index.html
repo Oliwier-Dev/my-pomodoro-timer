@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart pomodoro timer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-zinc-100 via-stone-100 to-zinc-200 text-zinc-900 antialiased">
+    <main id="main" class="mx-auto mt-8 max-w-xl px-4 sm:mt-12">
+        <div id="options" class="mb-4 flex flex-wrap items-center justify-center gap-3 rounded-2xl border border-zinc-300/80 bg-white/75 p-2 shadow-sm backdrop-blur">
+            <button id="workOption" class="rounded-xl bg-zinc-900 px-5 py-2 text-sm font-semibold text-white shadow-md transition-all duration-200 hover:bg-zinc-800 active:scale-[0.98]">Focus</button>
+            <button id="shortBreakOption" class="rounded-xl bg-zinc-900 px-5 py-2 text-sm font-semibold text-white shadow-md transition-all duration-200 hover:bg-zinc-800 active:scale-[0.98]">Short Break</button>
+            <button id="longBreakOption" class="rounded-xl bg-zinc-900 px-5 py-2 text-sm font-semibold text-white shadow-md transition-all duration-200 hover:bg-zinc-800 active:scale-[0.98]">Long break</button>
+        </div>
+
+        <div id="timer" class="rounded-3xl border border-zinc-300/80 bg-white/85 p-6 shadow-xl shadow-zinc-400/20 backdrop-blur">
+
+            <div id="display" class="mt-1 rounded-2xl border border-zinc-200 bg-zinc-50/90 px-4 py-5 text-center text-5xl font-semibold tracking-wider text-zinc-800 tabular-nums shadow-inner"></div>
+
+            <form id="timerContainer" class="mt-5 flex flex-col justify-center gap-3">
+                <label id="label" for="timerInput" class="mx-auto text-sm font-medium text-zinc-700">Input time in minutes</label>
+                <input type="number" id="timerInput" placeholder="25" class="mx-auto w-full max-w-56 rounded-xl border border-zinc-300 bg-white px-3 py-2 text-center font-medium outline-none ring-zinc-400 transition focus:border-zinc-400 focus:ring-2">
+                <button id="startBtn" class="mx-auto mt-1 w-fit rounded-xl bg-sky-600 px-6 py-2 font-semibold text-white shadow-lg shadow-sky-500/25 transition-all duration-200 hover:bg-sky-500 active:scale-[0.98]">Start</button>
+            </form>
+
+
+            <button id="stopSound" class="mx-auto mt-5 flex w-fit rounded-xl border border-zinc-300 bg-white px-5 py-2 font-semibold text-zinc-700 shadow-md transition-all duration-200 hover:bg-zinc-100 active:scale-[0.98]">Stop Sound</button>
+        </div>
+    </main>
+</body>
+</html>
