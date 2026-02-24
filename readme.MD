@@ -41,5 +41,6 @@ Live link:
 
 ## Notes
 
-- Keep `done.mp3` in the same folder so alarm playback works.
 - The latest valid focus input is reused as the default focus duration.
+
+https://roadmap.sh/projects/pomodoro-timer
